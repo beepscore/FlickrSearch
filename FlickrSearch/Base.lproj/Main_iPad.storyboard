@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5023" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -15,13 +15,60 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lvx-Ar-ikn">
+                                <rect key="frame" x="0.0" y="37" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Share" id="BmR-Zv-r6Y">
+                                        <connections>
+                                            <action selector="shareButtonTapped:" destination="BYZ-38-t0r" id="7Ow-fq-bas"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search_text" translatesAutoresizingMaskIntoConstraints="NO" id="C8j-WI-G0g">
+                                <rect key="frame" x="20" y="80" width="97" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UXx-PF-5b6">
+                                <rect key="frame" x="137" y="75" width="611" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="divider_bar" translatesAutoresizingMaskIntoConstraints="NO" id="BqH-r6-08A">
+                                <rect key="frame" x="20" y="116" width="728" height="13"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="BqH-r6-08A" secondAttribute="trailing" constant="20" id="8E0-bL-hAw"/>
+                            <constraint firstAttribute="trailing" secondItem="UXx-PF-5b6" secondAttribute="trailing" constant="20" symbolic="YES" id="C2p-AT-uYc"/>
+                            <constraint firstItem="BqH-r6-08A" firstAttribute="top" secondItem="C8j-WI-G0g" secondAttribute="bottom" constant="11" id="HDw-Cp-Mbe"/>
+                            <constraint firstItem="C8j-WI-G0g" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="KyI-sD-Cu6"/>
+                            <constraint firstItem="UXx-PF-5b6" firstAttribute="bottom" secondItem="C8j-WI-G0g" secondAttribute="bottom" id="grX-2G-9G7"/>
+                            <constraint firstItem="C8j-WI-G0g" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="top" constant="60" id="o3N-H5-u5k"/>
+                            <constraint firstItem="BqH-r6-08A" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="rYT-M2-1O2"/>
+                            <constraint firstItem="UXx-PF-5b6" firstAttribute="leading" secondItem="C8j-WI-G0g" secondAttribute="trailing" constant="20" id="wSG-bN-Bon"/>
+                        </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="shareButton" destination="BmR-Zv-r6Y" id="CA3-Dg-bhr"/>
+                        <outlet property="textField" destination="UXx-PF-5b6" id="uwh-5F-O3E"/>
+                        <outlet property="toolbar" destination="Lvx-Ar-ikn" id="pRu-Zv-zSr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="divider_bar" width="697" height="13"/>
+        <image name="search_text" width="97" height="25"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
