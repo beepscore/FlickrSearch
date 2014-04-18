@@ -7,11 +7,17 @@
 //
 
 #import "ViewController.h"
+#import "Flickr.h"
+#import "FlickrPhoto.h"
 
 @interface ViewController () <UITextFieldDelegate>
 @property(nonatomic, weak) IBOutlet UIToolbar *toolbar;
 @property(nonatomic, weak) IBOutlet UIBarButtonItem *shareButton;
 @property(nonatomic, weak) IBOutlet UITextField *textField;
+
+@property(nonatomic, strong) NSMutableDictionary *searchResults;
+@property(nonatomic, strong) NSMutableArray *searches;
+@property(nonatomic, strong) Flickr *flickr;
 
 - (IBAction)shareButtonTapped:(id)sender;
 
