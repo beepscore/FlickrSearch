@@ -22,6 +22,10 @@
 		DE4253D31900C50F00B8B746 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4253B21900C50F00B8B746 /* UIKit.framework */; };
 		DE4253DB1900C50F00B8B746 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE4253D91900C50F00B8B746 /* InfoPlist.strings */; };
 		DE4253DD1900C50F00B8B746 /* FlickrSearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4253DC1900C50F00B8B746 /* FlickrSearchTests.m */; };
+		DEEB50BB1900EB400020EE87 /* Flickr.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEB50B81900EB400020EE87 /* Flickr.m */; };
+		DEEB50BC1900EB400020EE87 /* Flickr.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEB50B81900EB400020EE87 /* Flickr.m */; };
+		DEEB50BD1900EB400020EE87 /* FlickrPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEB50BA1900EB400020EE87 /* FlickrPhoto.m */; };
+		DEEB50BE1900EB400020EE87 /* FlickrPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEB50BA1900EB400020EE87 /* FlickrPhoto.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,10 @@
 		DE4253D81900C50F00B8B746 /* FlickrSearchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlickrSearchTests-Info.plist"; sourceTree = "<group>"; };
 		DE4253DA1900C50F00B8B746 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DE4253DC1900C50F00B8B746 /* FlickrSearchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlickrSearchTests.m; sourceTree = "<group>"; };
+		DEEB50B71900EB400020EE87 /* Flickr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flickr.h; sourceTree = "<group>"; };
+		DEEB50B81900EB400020EE87 /* Flickr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Flickr.m; sourceTree = "<group>"; };
+		DEEB50B91900EB400020EE87 /* FlickrPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhoto.h; sourceTree = "<group>"; };
+		DEEB50BA1900EB400020EE87 /* FlickrPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhoto.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +126,10 @@
 				DE4253BE1900C50F00B8B746 /* AppDelegate.m */,
 				DE4253C01900C50F00B8B746 /* Main_iPhone.storyboard */,
 				DE4253C31900C50F00B8B746 /* Main_iPad.storyboard */,
+				DEEB50B71900EB400020EE87 /* Flickr.h */,
+				DEEB50B81900EB400020EE87 /* Flickr.m */,
+				DEEB50B91900EB400020EE87 /* FlickrPhoto.h */,
+				DEEB50BA1900EB400020EE87 /* FlickrPhoto.m */,
 				DE4253C61900C50F00B8B746 /* ViewController.h */,
 				DE4253C71900C50F00B8B746 /* ViewController.m */,
 				DE4253C91900C50F00B8B746 /* Images.xcassets */,
@@ -255,6 +267,8 @@
 			files = (
 				DE4253C81900C50F00B8B746 /* ViewController.m in Sources */,
 				DE4253BF1900C50F00B8B746 /* AppDelegate.m in Sources */,
+				DEEB50BB1900EB400020EE87 /* Flickr.m in Sources */,
+				DEEB50BD1900EB400020EE87 /* FlickrPhoto.m in Sources */,
 				DE4253BB1900C50F00B8B746 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +277,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEEB50BE1900EB400020EE87 /* FlickrPhoto.m in Sources */,
+				DEEB50BC1900EB400020EE87 /* Flickr.m in Sources */,
 				DE4253DD1900C50F00B8B746 /* FlickrSearchTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -470,6 +486,7 @@
 				DE4253E21900C50F00B8B746 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE4253E31900C50F00B8B746 /* Build configuration list for PBXNativeTarget "FlickrSearchTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +495,7 @@
 				DE4253E51900C50F00B8B746 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
