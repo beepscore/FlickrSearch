@@ -22,6 +22,9 @@
     self.searches = [@[] mutableCopy];
     self.searchResults = [@{} mutableCopy];
     self.flickr = [[Flickr alloc] init];
+    
+    [self.collectionView registerClass:[UICollectionViewCell class]
+            forCellWithReuseIdentifier:@"FlickrCell"];
 }
 
 - (void)configureUI
@@ -71,7 +74,7 @@
                              }
                              // 3
                              dispatch_async(dispatch_get_main_queue(), ^{
-                                 // Placeholder: reload collectionview data
+                                 [self.collectionView reloadData];
                              });
                          } else {
                              NSLog(@"Error searching Flickr: %@", error.localizedDescription);
