@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5cC-27-4jf">
-                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem title="Share" id="WMt-2u-6kw">
@@ -28,17 +28,17 @@
                                 </items>
                             </toolbar>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search_text" translatesAutoresizingMaskIntoConstraints="NO" id="qf4-0J-Ao9">
-                                <rect key="frame" x="20" y="68" width="97" height="25"/>
+                                <rect key="frame" x="20" y="112" width="97" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qvw-Sy-he5">
-                                <rect key="frame" x="123" y="63" width="177" height="30"/>
+                                <rect key="frame" x="123" y="107" width="177" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="divider_bar" translatesAutoresizingMaskIntoConstraints="NO" id="ojI-QS-Qdj">
-                                <rect key="frame" x="20" y="99" width="280" height="13"/>
+                                <rect key="frame" x="20" y="143" width="280" height="13"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -52,7 +52,7 @@
                             <constraint firstAttribute="trailing" secondItem="Qvw-Sy-he5" secondAttribute="trailing" constant="20" id="VXp-4F-jLb"/>
                             <constraint firstItem="Qvw-Sy-he5" firstAttribute="leading" secondItem="qf4-0J-Ao9" secondAttribute="trailing" constant="6" id="XMv-8h-PwW"/>
                             <constraint firstItem="qf4-0J-Ao9" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="ZLb-R3-oUq"/>
-                            <constraint firstItem="jyV-Pf-zRb" firstAttribute="top" secondItem="5cC-27-4jf" secondAttribute="bottom" id="ei3-SL-Ywd"/>
+                            <constraint firstItem="jyV-Pf-zRb" firstAttribute="bottom" secondItem="5cC-27-4jf" secondAttribute="top" id="ei3-SL-Ywd"/>
                             <constraint firstItem="5cC-27-4jf" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="oxr-W7-zFq"/>
                             <constraint firstItem="qf4-0J-Ao9" firstAttribute="top" secondItem="5cC-27-4jf" secondAttribute="bottom" constant="4" id="vIV-FA-PhW"/>
                         </constraints>
