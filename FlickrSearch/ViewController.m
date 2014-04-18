@@ -67,4 +67,30 @@
 //TODO:
 }
 
+#pragma mark - UITextFieldDelegate methods
+- (BOOL) textFieldShouldReturn:(UITextField *)textField {
+    // 1
+    [self.flickr searchFlickrForTerm:textField.text
+                     completionBlock:^(NSString *searchTerm, NSArray *results, NSError *error) {
+                         if(results && [results count] > 0) {
+                             
+                             if(![self.searches containsObject:searchTerm]) {
+                                 // haven't searched for this term before
+                                 NSLog(@"Found %d photos matching %@", [results count],searchTerm);
+                                 [self.searches insertObject:searchTerm atIndex:0];
+                                 self.searchResults[searchTerm] = results;
+                             }
+                             // 3
+                             dispatch_async(dispatch_get_main_queue(), ^{
+                                 // Placeholder: reload collectionview data
+                             });
+                         } else {
+                             NSLog(@"Error searching Flickr: %@", error.localizedDescription);
+                         }
+                     }];
+    
+    [textField resignFirstResponder];
+    return YES; 
+}
+
 @end
