@@ -28,6 +28,24 @@
     [super tearDown];
 }
 
+- (void)testStoryboardViewControllerIPadShareButton
+{
+    self.vc = (ViewController *)[BSStoryboardViewControllerLoader
+                                 viewControllerWithStoryboardName:@"Main_iPad"
+                                 identifier:@"ViewController"];
+
+    XCTAssertNotNil(self.vc.shareButton);
+}
+
+- (void)testStoryboardViewControllerIPhoneShareButton
+{
+    self.vc = (ViewController *)[BSStoryboardViewControllerLoader
+                                 viewControllerWithStoryboardName:@"Main_iPhone"
+                                 identifier:@"ViewController"];
+
+    XCTAssertNotNil(self.vc.shareButton);
+}
+
 - (void)testStoryboardViewControllerIPadTextField
 {
     self.vc = (ViewController *)[BSStoryboardViewControllerLoader
