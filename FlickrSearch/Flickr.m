@@ -15,7 +15,7 @@
 // Alternatively, register with Flickr for a developer key
 // http://www.flickr.com/services/api/keys/apply/
 // redirects to Yahoo login
-#define kFlickrAPIKey @"aaf61cceb5b3be871b3ce6d228127a4e"
+#define kFlickrAPIKey @"9b44975c4fd71c45b5eeec048d51dbd4"
 
 @implementation Flickr
 
