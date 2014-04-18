@@ -78,6 +78,9 @@
                                             <constraint firstAttribute="trailing" secondItem="iRw-U7-SgF" secondAttribute="trailing" constant="20" id="k9t-hg-rBi"/>
                                             <constraint firstAttribute="bottom" secondItem="iRw-U7-SgF" secondAttribute="bottom" constant="20" id="zwa-vr-lQ8"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="iRw-U7-SgF" id="1gq-3d-5y4"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>

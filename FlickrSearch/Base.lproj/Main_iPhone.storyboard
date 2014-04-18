@@ -75,6 +75,9 @@
                                             <constraint firstItem="WSD-pz-Uuc" firstAttribute="leading" secondItem="JGO-8N-rzl" secondAttribute="leading" constant="20" id="afe-Gk-js9"/>
                                             <constraint firstAttribute="bottom" secondItem="WSD-pz-Uuc" secondAttribute="bottom" constant="20" id="lQQ-5m-IRd"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="WSD-pz-Uuc" id="uFg-j6-Pbq"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
