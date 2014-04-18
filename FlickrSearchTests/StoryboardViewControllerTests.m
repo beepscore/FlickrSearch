@@ -46,4 +46,22 @@
     XCTAssertNotNil(self.vc.textField);
 }
 
+- (void)testStoryboardViewControllerIPadTextFieldDelegate
+{
+    self.vc = (ViewController *)[BSStoryboardViewControllerLoader
+                                 viewControllerWithStoryboardName:@"Main_iPad"
+                                 identifier:@"ViewController"];
+
+    XCTAssertEqualObjects(self.vc, self.vc.textField.delegate);
+}
+
+- (void)testStoryboardViewControllerIPhoneTextFieldDelegate
+{
+    self.vc = (ViewController *)[BSStoryboardViewControllerLoader
+                                 viewControllerWithStoryboardName:@"Main_iPhone"
+                                 identifier:@"ViewController"];
+
+    XCTAssertEqualObjects(self.vc, self.vc.textField.delegate);
+}
+
 @end
