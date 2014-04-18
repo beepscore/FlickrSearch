@@ -7,6 +7,7 @@
 //
 
 #import "FlickrPhotoCell.h"
+#import "FlickrPhoto.h"
 
 @implementation FlickrPhotoCell
 
@@ -19,13 +20,12 @@
     return self;
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
+- (void)setPhoto:(FlickrPhoto *)photo
 {
-    // Drawing code
+    if(_photo != photo) {
+        _photo = photo;
+    }
+    self.imageView.image = _photo.thumbnail;
 }
-*/
 
 @end

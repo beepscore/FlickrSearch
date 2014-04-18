@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "ViewControllerPrivate.h"
+#import "FlickrPhotoCell.h"
 
 @interface ViewController ()
 @end
@@ -101,9 +102,11 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)cv
                   cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionViewCell *cell = [cv dequeueReusableCellWithReuseIdentifier:@"FlickrCell"
-                                                               forIndexPath:indexPath];
-    cell.backgroundColor = [UIColor whiteColor];
+    FlickrPhotoCell *cell = [cv dequeueReusableCellWithReuseIdentifier:@"FlickrCell"
+                                                          forIndexPath:indexPath];
+    NSString *searchTerm = self.searches[indexPath.section];
+    cell.photo = self.searchResults[searchTerm]
+    [indexPath.row];
     return cell;
 }
 
