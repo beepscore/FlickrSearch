@@ -63,6 +63,7 @@
 		DE4253DC1900C50F00B8B746 /* FlickrSearchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlickrSearchTests.m; sourceTree = "<group>"; };
 		DEB375201901A92300E4A298 /* BSStoryboardViewControllerLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSStoryboardViewControllerLoader.h; sourceTree = "<group>"; };
 		DEB375211901A92300E4A298 /* BSStoryboardViewControllerLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSStoryboardViewControllerLoader.m; sourceTree = "<group>"; };
+		DEB375231901ADD100E4A298 /* ViewControllerPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerPrivate.h; sourceTree = "<group>"; };
 		DEB556A61901A4C000F848E3 /* StoryboardViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryboardViewControllerTests.m; sourceTree = "<group>"; };
 		DEEB50B71900EB400020EE87 /* Flickr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flickr.h; sourceTree = "<group>"; };
 		DEEB50B81900EB400020EE87 /* Flickr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Flickr.m; sourceTree = "<group>"; };
@@ -136,6 +137,7 @@
 				DEEB50B91900EB400020EE87 /* FlickrPhoto.h */,
 				DEEB50BA1900EB400020EE87 /* FlickrPhoto.m */,
 				DE4253C61900C50F00B8B746 /* ViewController.h */,
+				DEB375231901ADD100E4A298 /* ViewControllerPrivate.h */,
 				DE4253C71900C50F00B8B746 /* ViewController.m */,
 				DE4253C91900C50F00B8B746 /* Images.xcassets */,
 				DE4253B51900C50F00B8B746 /* Supporting Files */,

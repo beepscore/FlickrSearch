@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "ViewController.h"
+#import "ViewControllerPrivate.h"
 #import "BSStoryboardViewControllerLoader.h"
 
 @interface StoryboardViewControllerTests : XCTestCase
@@ -31,9 +32,9 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testViewControllerTextField
 {
-    //XCTAssertNotNil(self.vc.textField.delegate);
+    XCTAssertNotNil(self.vc.textField);
 }
 
 @end
