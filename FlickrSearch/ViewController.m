@@ -29,6 +29,10 @@
 {
     [super viewDidLoad];
     [self configureUI];
+
+    self.searches = [@[] mutableCopy];
+    self.searchResults = [@{} mutableCopy];
+    self.flickr = [[Flickr alloc] init];
 }
 
 - (void)configureUI
