@@ -47,17 +47,32 @@
                                 <rect key="frame" x="20" y="129" width="728" height="13"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="m5p-jQ-gXC">
+                                <rect key="frame" x="0.0" y="162" width="768" height="862"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7zG-XQ-nrz">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="BqH-r6-08A" secondAttribute="trailing" constant="20" id="8E0-bL-hAw"/>
                             <constraint firstItem="C8j-WI-G0g" firstAttribute="top" secondItem="Lvx-Ar-ikn" secondAttribute="bottom" constant="8" id="BrG-0P-1DA"/>
                             <constraint firstAttribute="trailing" secondItem="UXx-PF-5b6" secondAttribute="trailing" constant="20" symbolic="YES" id="C2p-AT-uYc"/>
+                            <constraint firstItem="m5p-jQ-gXC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="C8R-9I-hrx"/>
                             <constraint firstItem="BqH-r6-08A" firstAttribute="top" secondItem="C8j-WI-G0g" secondAttribute="bottom" constant="8" id="HDw-Cp-Mbe"/>
+                            <constraint firstItem="m5p-jQ-gXC" firstAttribute="top" secondItem="BqH-r6-08A" secondAttribute="bottom" constant="20" id="HLY-kg-T0t"/>
                             <constraint firstItem="C8j-WI-G0g" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="KyI-sD-Cu6"/>
+                            <constraint firstAttribute="bottom" secondItem="m5p-jQ-gXC" secondAttribute="bottom" id="M3a-zK-UuQ"/>
                             <constraint firstItem="Lvx-Ar-ikn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OQf-p5-gvg"/>
                             <constraint firstAttribute="centerX" secondItem="Lvx-Ar-ikn" secondAttribute="centerX" id="au3-7h-GYm"/>
                             <constraint firstItem="UXx-PF-5b6" firstAttribute="bottom" secondItem="C8j-WI-G0g" secondAttribute="bottom" id="grX-2G-9G7"/>
+                            <constraint firstAttribute="trailing" secondItem="m5p-jQ-gXC" secondAttribute="trailing" id="rKd-aE-r3H"/>
                             <constraint firstItem="BqH-r6-08A" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="rYT-M2-1O2"/>
                             <constraint firstItem="Lvx-Ar-ikn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="24" id="w4y-9I-Qzo"/>
                             <constraint firstItem="UXx-PF-5b6" firstAttribute="leading" secondItem="C8j-WI-G0g" secondAttribute="trailing" constant="20" id="wSG-bN-Bon"/>
@@ -65,6 +80,7 @@
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <connections>
+                        <outlet property="collectionView" destination="m5p-jQ-gXC" id="C7J-Zm-Q4U"/>
                         <outlet property="shareButton" destination="BmR-Zv-r6Y" id="CA3-Dg-bhr"/>
                         <outlet property="textField" destination="UXx-PF-5b6" id="uwh-5F-O3E"/>
                         <outlet property="toolbar" destination="Lvx-Ar-ikn" id="pRu-Zv-zSr"/>
@@ -72,6 +88,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-131" y="-201"/>
         </scene>
     </scenes>
     <resources>

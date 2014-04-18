@@ -44,18 +44,33 @@
                                 <rect key="frame" x="20" y="143" width="280" height="13"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="94p-5r-yxS">
+                                <rect key="frame" x="0.0" y="166" width="320" height="402"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="na6-zg-gXh">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ojI-QS-Qdj" firstAttribute="top" secondItem="qf4-0J-Ao9" secondAttribute="bottom" constant="6" id="1qh-fh-24L"/>
+                            <constraint firstItem="94p-5r-yxS" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="6vZ-d3-Hqw"/>
                             <constraint firstItem="Qvw-Sy-he5" firstAttribute="bottom" secondItem="qf4-0J-Ao9" secondAttribute="bottom" id="8ov-pI-n6Z"/>
                             <constraint firstAttribute="trailing" secondItem="ojI-QS-Qdj" secondAttribute="trailing" constant="20" id="Ei9-uJ-rjJ"/>
                             <constraint firstAttribute="trailing" secondItem="5cC-27-4jf" secondAttribute="trailing" id="Hhg-8s-nua"/>
+                            <constraint firstAttribute="trailing" secondItem="94p-5r-yxS" secondAttribute="trailing" id="OYE-WD-Jl4"/>
+                            <constraint firstAttribute="bottom" secondItem="94p-5r-yxS" secondAttribute="bottom" id="R9L-NM-Nxx"/>
                             <constraint firstItem="ojI-QS-Qdj" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="Upb-6R-4kz"/>
                             <constraint firstAttribute="trailing" secondItem="Qvw-Sy-he5" secondAttribute="trailing" constant="20" id="VXp-4F-jLb"/>
                             <constraint firstItem="Qvw-Sy-he5" firstAttribute="leading" secondItem="qf4-0J-Ao9" secondAttribute="trailing" constant="6" id="XMv-8h-PwW"/>
                             <constraint firstItem="qf4-0J-Ao9" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="ZLb-R3-oUq"/>
                             <constraint firstItem="jyV-Pf-zRb" firstAttribute="bottom" secondItem="5cC-27-4jf" secondAttribute="top" id="ei3-SL-Ywd"/>
+                            <constraint firstItem="94p-5r-yxS" firstAttribute="top" secondItem="ojI-QS-Qdj" secondAttribute="bottom" constant="10" id="nEf-aq-70V"/>
                             <constraint firstItem="5cC-27-4jf" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="oxr-W7-zFq"/>
                             <constraint firstItem="qf4-0J-Ao9" firstAttribute="top" secondItem="5cC-27-4jf" secondAttribute="bottom" constant="4" id="vIV-FA-PhW"/>
                         </constraints>
@@ -63,6 +78,7 @@
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
+                        <outlet property="collectionView" destination="94p-5r-yxS" id="fyB-m9-0bd"/>
                         <outlet property="shareButton" destination="WMt-2u-6kw" id="TS8-cd-dgp"/>
                         <outlet property="textField" destination="Qvw-Sy-he5" id="Uhm-6T-L7S"/>
                         <outlet property="toolbar" destination="5cC-27-4jf" id="LzN-TZ-rT2"/>

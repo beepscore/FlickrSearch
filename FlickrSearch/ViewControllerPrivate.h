@@ -15,6 +15,7 @@
 @interface ViewController () <UITextFieldDelegate,
 UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
+@property(nonatomic, weak) IBOutlet UICollectionView *collectionView;
 @property(nonatomic, weak) IBOutlet UIToolbar *toolbar;
 @property(nonatomic, weak) IBOutlet UIBarButtonItem *shareButton;
 @property(nonatomic, weak) IBOutlet UITextField *textField;
