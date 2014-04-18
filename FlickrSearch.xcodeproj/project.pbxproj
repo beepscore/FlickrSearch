@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE16798D1901DC2E000A41B5 /* FlickrPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE16798C1901DC2E000A41B5 /* FlickrPhotoCell.m */; };
+		DE16798E1901DC2E000A41B5 /* FlickrPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE16798C1901DC2E000A41B5 /* FlickrPhotoCell.m */; };
 		DE4253AF1900C50F00B8B746 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4253AE1900C50F00B8B746 /* Foundation.framework */; };
 		DE4253B11900C50F00B8B746 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4253B01900C50F00B8B746 /* CoreGraphics.framework */; };
 		DE4253B31900C50F00B8B746 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4253B21900C50F00B8B746 /* UIKit.framework */; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DE16798B1901DC2E000A41B5 /* FlickrPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhotoCell.h; sourceTree = "<group>"; };
+		DE16798C1901DC2E000A41B5 /* FlickrPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhotoCell.m; sourceTree = "<group>"; };
 		DE4253AB1900C50F00B8B746 /* FlickrSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickrSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE4253AE1900C50F00B8B746 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DE4253B01900C50F00B8B746 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -136,6 +140,8 @@
 				DEEB50B81900EB400020EE87 /* Flickr.m */,
 				DEEB50B91900EB400020EE87 /* FlickrPhoto.h */,
 				DEEB50BA1900EB400020EE87 /* FlickrPhoto.m */,
+				DE16798B1901DC2E000A41B5 /* FlickrPhotoCell.h */,
+				DE16798C1901DC2E000A41B5 /* FlickrPhotoCell.m */,
 				DE4253C61900C50F00B8B746 /* ViewController.h */,
 				DEB375231901ADD100E4A298 /* ViewControllerPrivate.h */,
 				DE4253C71900C50F00B8B746 /* ViewController.m */,
@@ -275,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE4253C81900C50F00B8B746 /* ViewController.m in Sources */,
+				DE16798D1901DC2E000A41B5 /* FlickrPhotoCell.m in Sources */,
 				DE4253BF1900C50F00B8B746 /* AppDelegate.m in Sources */,
 				DEEB50BB1900EB400020EE87 /* Flickr.m in Sources */,
 				DEEB50BD1900EB400020EE87 /* FlickrPhoto.m in Sources */,
@@ -286,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE16798E1901DC2E000A41B5 /* FlickrPhotoCell.m in Sources */,
 				DEED2C451901B78400C6264C /* ViewController.m in Sources */,
 				DEB375221901A92300E4A298 /* BSStoryboardViewControllerLoader.m in Sources */,
 				DEED2C461901B7BB00C6264C /* AppDelegate.m in Sources */,

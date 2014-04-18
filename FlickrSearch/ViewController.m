@@ -23,8 +23,8 @@
     self.searchResults = [@{} mutableCopy];
     self.flickr = [[Flickr alloc] init];
     
-    [self.collectionView registerClass:[UICollectionViewCell class]
-            forCellWithReuseIdentifier:@"FlickrCell"];
+//    [self.collectionView registerClass:[UICollectionViewCell class]
+//            forCellWithReuseIdentifier:@"FlickrCell"];
 }
 
 - (void)configureUI
