@@ -13,22 +13,25 @@
 
 @implementation Flickr
 
-+ (NSString *)flickrSearchURLForSearchTerm:(NSString *) searchTerm
++ (NSString *)flickrSearchURLForSearchTerm:(NSString *)searchTerm
 {
     searchTerm = [searchTerm stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    return [NSString stringWithFormat:@"http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=%@&text=%@&per_page=20&format=json&nojsoncallback=1",kFlickrAPIKey,searchTerm];
+    return [NSString stringWithFormat:@"http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=%@&text=%@&per_page=20&format=json&nojsoncallback=1", kFlickrAPIKey, searchTerm];
 }
 
-+ (NSString *)flickrPhotoURLForFlickrPhoto:(FlickrPhoto *) flickrPhoto size:(NSString *) size
++ (NSString *)flickrPhotoURLForFlickrPhoto:(FlickrPhoto *)flickrPhoto
+                                      size:(NSString *)size
 {
     if(!size)
     {
         size = @"m";
     }
-    return [NSString stringWithFormat:@"http://farm%d.staticflickr.com/%d/%lld_%@_%@.jpg",flickrPhoto.farm,flickrPhoto.server,flickrPhoto.photoID,flickrPhoto.secret,size];
+    return [NSString stringWithFormat:@"http://farm%d.staticflickr.com/%d/%lld_%@_%@.jpg",
+            flickrPhoto.farm, flickrPhoto.server, flickrPhoto.photoID, flickrPhoto.secret, size];
 }
 
-- (void)searchFlickrForTerm:(NSString *) term completionBlock:(FlickrSearchCompletionBlock) completionBlock
+- (void)searchFlickrForTerm:(NSString *)term
+            completionBlock:(FlickrSearchCompletionBlock)completionBlock
 {
     NSString *searchURL = [Flickr flickrSearchURLForSearchTerm:term];
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
@@ -39,7 +42,7 @@
                                                            encoding:NSUTF8StringEncoding
                                                               error:&error];
         if (error != nil) {
-            completionBlock(term,nil,error);
+            completionBlock(term, nil, error);
         }
         else
         {
@@ -50,7 +53,7 @@
                                                                                 error:&error];
             if(error != nil)
             {
-                completionBlock(term,nil,error);
+                completionBlock(term, nil, error);
             }
             else
             {
@@ -87,7 +90,9 @@
     });
 }
 
-+ (void)loadImageForPhoto:(FlickrPhoto *)flickrPhoto thumbnail:(BOOL)thumbnail completionBlock:(FlickrPhotoCompletionBlock) completionBlock
++ (void)loadImageForPhoto:(FlickrPhoto *)flickrPhoto
+                thumbnail:(BOOL)thumbnail
+          completionBlock:(FlickrPhotoCompletionBlock)completionBlock
 {
     
     NSString *size = thumbnail ? @"m" : @"b";
