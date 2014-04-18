@@ -64,6 +64,24 @@
     XCTAssertEqualObjects(self.vc, self.vc.collectionView.dataSource);
 }
 
+- (void)testStoryboardViewControllerIPadCollectionViewDelegate
+{
+    self.vc = (ViewController *)[BSStoryboardViewControllerLoader
+                                 viewControllerWithStoryboardName:@"Main_iPad"
+                                 identifier:@"ViewController"];
+
+    XCTAssertEqualObjects(self.vc, self.vc.collectionView.delegate);
+}
+
+- (void)testStoryboardViewControllerIPhoneCollectionViewDelegate
+{
+    self.vc = (ViewController *)[BSStoryboardViewControllerLoader
+                                 viewControllerWithStoryboardName:@"Main_iPhone"
+                                 identifier:@"ViewController"];
+
+    XCTAssertEqualObjects(self.vc, self.vc.collectionView.delegate);
+}
+
 - (void)testStoryboardViewControllerIPadShareButton
 {
     self.vc = (ViewController *)[BSStoryboardViewControllerLoader
