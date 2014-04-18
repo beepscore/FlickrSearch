@@ -19,11 +19,13 @@
 {
     [super setUp];
 
-    // http://iosunittesting.com/using-storyboards/
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone"
                                                          bundle:[NSBundle mainBundle]];
 
     self.vc = [storyboard instantiateViewControllerWithIdentifier:@"ViewController"];
+
+    // Call load view to instantiate view and subviews.
+    // http://iosunittesting.com/using-storyboards/
     [self.vc performSelectorOnMainThread:@selector(loadView)
                               withObject:nil
                            waitUntilDone:YES];
