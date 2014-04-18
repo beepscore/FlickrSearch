@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "ViewController.h"
+#import "BSStoryboardViewControllerLoader.h"
 
 @interface StoryboardViewControllerTests : XCTestCase
 @property ViewController *vc;
@@ -18,17 +19,10 @@
 - (void)setUp
 {
     [super setUp];
-
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main_iPhone"
-                                                         bundle:[NSBundle mainBundle]];
-
-    self.vc = [storyboard instantiateViewControllerWithIdentifier:@"ViewController"];
-
-    // Call load view to instantiate view and subviews.
-    // http://iosunittesting.com/using-storyboards/
-    [self.vc performSelectorOnMainThread:@selector(loadView)
-                              withObject:nil
-                           waitUntilDone:YES];
+    
+    self.vc = (ViewController *)[BSStoryboardViewControllerLoader
+                                 viewControllerWithStoryboardName:@"Main_iPhone"
+                                 identifier:@"ViewController"];
 }
 
 - (void)tearDown

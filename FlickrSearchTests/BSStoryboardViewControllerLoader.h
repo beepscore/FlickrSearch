@@ -10,4 +10,10 @@
 
 @interface BSStoryboardViewControllerLoader : NSObject
 
+/**
+ @parameter storyboardName example @"Main_iPhone" or @"Main_iPad"
+ @parameter identifier The view controller identifier in the storyboard
+ **/
++ (UIViewController *)viewControllerWithStoryboardName:(NSString *)storyboardName
+                                            identifier:(NSString *)identifier;
 @end
