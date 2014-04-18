@@ -20,10 +20,6 @@
 - (void)setUp
 {
     [super setUp];
-    
-    self.vc = (ViewController *)[BSStoryboardViewControllerLoader
-                                 viewControllerWithStoryboardName:@"Main_iPhone"
-                                 identifier:@"ViewController"];
 }
 
 - (void)tearDown
@@ -32,8 +28,21 @@
     [super tearDown];
 }
 
-- (void)testViewControllerTextField
+- (void)testStoryboardViewControllerIPadTextField
 {
+    self.vc = (ViewController *)[BSStoryboardViewControllerLoader
+                                 viewControllerWithStoryboardName:@"Main_iPad"
+                                 identifier:@"ViewController"];
+
+    XCTAssertNotNil(self.vc.textField);
+}
+
+- (void)testStoryboardViewControllerIPhoneTextField
+{
+    self.vc = (ViewController *)[BSStoryboardViewControllerLoader
+                                 viewControllerWithStoryboardName:@"Main_iPhone"
+                                 identifier:@"ViewController"];
+
     XCTAssertNotNil(self.vc.textField);
 }
 
