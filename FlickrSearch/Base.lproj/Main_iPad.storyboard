@@ -16,9 +16,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lvx-Ar-ikn">
-                                <rect key="frame" x="0.0" y="37" width="768" height="44"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lvx-Ar-ikn">
+                                <rect key="frame" x="0.0" y="44" width="768" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="B96-Du-NhK"/>
+                                </constraints>
                                 <items>
                                     <barButtonItem title="Share" id="BmR-Zv-r6Y">
                                         <connections>
@@ -28,29 +31,32 @@
                                 </items>
                             </toolbar>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search_text" translatesAutoresizingMaskIntoConstraints="NO" id="C8j-WI-G0g">
-                                <rect key="frame" x="20" y="80" width="97" height="25"/>
+                                <rect key="frame" x="20" y="96" width="97" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UXx-PF-5b6">
-                                <rect key="frame" x="137" y="75" width="611" height="30"/>
+                                <rect key="frame" x="137" y="91" width="611" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="divider_bar" translatesAutoresizingMaskIntoConstraints="NO" id="BqH-r6-08A">
-                                <rect key="frame" x="20" y="116" width="728" height="13"/>
+                                <rect key="frame" x="20" y="129" width="728" height="13"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="BqH-r6-08A" secondAttribute="trailing" constant="20" id="8E0-bL-hAw"/>
+                            <constraint firstItem="C8j-WI-G0g" firstAttribute="top" secondItem="Lvx-Ar-ikn" secondAttribute="bottom" constant="8" id="BrG-0P-1DA"/>
                             <constraint firstAttribute="trailing" secondItem="UXx-PF-5b6" secondAttribute="trailing" constant="20" symbolic="YES" id="C2p-AT-uYc"/>
-                            <constraint firstItem="BqH-r6-08A" firstAttribute="top" secondItem="C8j-WI-G0g" secondAttribute="bottom" constant="11" id="HDw-Cp-Mbe"/>
+                            <constraint firstItem="BqH-r6-08A" firstAttribute="top" secondItem="C8j-WI-G0g" secondAttribute="bottom" constant="8" id="HDw-Cp-Mbe"/>
                             <constraint firstItem="C8j-WI-G0g" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="KyI-sD-Cu6"/>
+                            <constraint firstItem="Lvx-Ar-ikn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OQf-p5-gvg"/>
+                            <constraint firstAttribute="centerX" secondItem="Lvx-Ar-ikn" secondAttribute="centerX" id="au3-7h-GYm"/>
                             <constraint firstItem="UXx-PF-5b6" firstAttribute="bottom" secondItem="C8j-WI-G0g" secondAttribute="bottom" id="grX-2G-9G7"/>
-                            <constraint firstItem="C8j-WI-G0g" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="top" constant="60" id="o3N-H5-u5k"/>
                             <constraint firstItem="BqH-r6-08A" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="rYT-M2-1O2"/>
+                            <constraint firstItem="Lvx-Ar-ikn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="24" id="w4y-9I-Qzo"/>
                             <constraint firstItem="UXx-PF-5b6" firstAttribute="leading" secondItem="C8j-WI-G0g" secondAttribute="trailing" constant="20" id="wSG-bN-Bon"/>
                         </constraints>
                     </view>
