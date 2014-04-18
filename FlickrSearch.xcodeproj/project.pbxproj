@@ -22,6 +22,7 @@
 		DE4253D31900C50F00B8B746 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4253B21900C50F00B8B746 /* UIKit.framework */; };
 		DE4253DB1900C50F00B8B746 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE4253D91900C50F00B8B746 /* InfoPlist.strings */; };
 		DE4253DD1900C50F00B8B746 /* FlickrSearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4253DC1900C50F00B8B746 /* FlickrSearchTests.m */; };
+		DEB375221901A92300E4A298 /* BSStoryboardViewControllerLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB375211901A92300E4A298 /* BSStoryboardViewControllerLoader.m */; };
 		DEB556A71901A4C000F848E3 /* StoryboardViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB556A61901A4C000F848E3 /* StoryboardViewControllerTests.m */; };
 		DEEB50BB1900EB400020EE87 /* Flickr.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEB50B81900EB400020EE87 /* Flickr.m */; };
 		DEEB50BC1900EB400020EE87 /* Flickr.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEB50B81900EB400020EE87 /* Flickr.m */; };
@@ -60,6 +61,8 @@
 		DE4253D81900C50F00B8B746 /* FlickrSearchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlickrSearchTests-Info.plist"; sourceTree = "<group>"; };
 		DE4253DA1900C50F00B8B746 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DE4253DC1900C50F00B8B746 /* FlickrSearchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlickrSearchTests.m; sourceTree = "<group>"; };
+		DEB375201901A92300E4A298 /* BSStoryboardViewControllerLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSStoryboardViewControllerLoader.h; sourceTree = "<group>"; };
+		DEB375211901A92300E4A298 /* BSStoryboardViewControllerLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSStoryboardViewControllerLoader.m; sourceTree = "<group>"; };
 		DEB556A61901A4C000F848E3 /* StoryboardViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryboardViewControllerTests.m; sourceTree = "<group>"; };
 		DEEB50B71900EB400020EE87 /* Flickr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flickr.h; sourceTree = "<group>"; };
 		DEEB50B81900EB400020EE87 /* Flickr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Flickr.m; sourceTree = "<group>"; };
@@ -155,6 +158,8 @@
 			isa = PBXGroup;
 			children = (
 				DE4253D71900C50F00B8B746 /* Supporting Files */,
+				DEB375201901A92300E4A298 /* BSStoryboardViewControllerLoader.h */,
+				DEB375211901A92300E4A298 /* BSStoryboardViewControllerLoader.m */,
 				DE4253DC1900C50F00B8B746 /* FlickrSearchTests.m */,
 				DEB556A61901A4C000F848E3 /* StoryboardViewControllerTests.m */,
 			);
@@ -280,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEB375221901A92300E4A298 /* BSStoryboardViewControllerLoader.m in Sources */,
 				DEEB50BE1900EB400020EE87 /* FlickrPhoto.m in Sources */,
 				DEB556A71901A4C000F848E3 /* StoryboardViewControllerTests.m in Sources */,
 				DEEB50BC1900EB400020EE87 /* Flickr.m in Sources */,
