@@ -64,4 +64,22 @@
     XCTAssertEqualObjects(self.vc, self.vc.textField.delegate);
 }
 
+- (void)testStoryboardViewControllerIPadToolbar
+{
+    self.vc = (ViewController *)[BSStoryboardViewControllerLoader
+                                 viewControllerWithStoryboardName:@"Main_iPad"
+                                 identifier:@"ViewController"];
+
+    XCTAssertNotNil(self.vc.toolbar);
+}
+
+- (void)testStoryboardViewControllerIPhoneToolbar
+{
+    self.vc = (ViewController *)[BSStoryboardViewControllerLoader
+                                 viewControllerWithStoryboardName:@"Main_iPhone"
+                                 identifier:@"ViewController"];
+
+    XCTAssertNotNil(self.vc.toolbar);
+}
+
 @end
