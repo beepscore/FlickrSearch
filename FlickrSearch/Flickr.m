@@ -9,7 +9,13 @@
 #import "Flickr.h"
 #import "FlickrPhoto.h"
 
-#define kFlickrAPIKey @"d02c877c0a4220890f14fc95f8b16983"
+// get temporary key from
+// http://www.flickr.com/services/api/explore/?method=flickr.photos.search
+// on that page, do a search to get url at bottom of page. Then copy &apiKey up to &
+// Alternatively, register with Flickr for a developer key
+// http://www.flickr.com/services/api/keys/apply/
+// redirects to Yahoo login
+#define kFlickrAPIKey @"aaf61cceb5b3be871b3ce6d228127a4e"
 
 @implementation Flickr
 
