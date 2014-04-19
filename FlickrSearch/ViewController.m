@@ -69,7 +69,8 @@
                              
                              if(![self.searches containsObject:searchTerm]) {
                                  // haven't searched for this term before
-                                 NSLog(@"Found %d photos matching %@", [results count],searchTerm);
+                                 NSLog(@"Found %lu photos matching %@",
+                                       (unsigned long)[results count], searchTerm);
                                  [self.searches insertObject:searchTerm atIndex:0];
                                  self.searchResults[searchTerm] = results;
                              }

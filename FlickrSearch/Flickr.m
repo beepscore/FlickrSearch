@@ -32,8 +32,9 @@
     {
         size = @"m";
     }
-    return [NSString stringWithFormat:@"http://farm%d.staticflickr.com/%d/%lld_%@_%@.jpg",
-            flickrPhoto.farm, flickrPhoto.server, flickrPhoto.photoID, flickrPhoto.secret, size];
+    return [NSString stringWithFormat:@"http://farm%ld.staticflickr.com/%ld/%lld_%@_%@.jpg",
+            (long)flickrPhoto.farm, (long)flickrPhoto.server,
+            flickrPhoto.photoID, flickrPhoto.secret, size];
 }
 
 - (void)searchFlickrForTerm:(NSString *)term
