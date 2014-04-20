@@ -178,14 +178,25 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="L8J-74-4My">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Z9W-nY-ahS" firstAttribute="top" secondItem="5xs-OR-Dm4" secondAttribute="bottom" id="274-jS-JLD"/>
                             <constraint firstItem="Z9W-nY-ahS" firstAttribute="leading" secondItem="Ber-st-vmh" secondAttribute="leading" id="3Rt-7c-xKL"/>
                             <constraint firstAttribute="trailing" secondItem="Z9W-nY-ahS" secondAttribute="trailing" id="42Z-CN-xNv"/>
+                            <constraint firstItem="L8J-74-4My" firstAttribute="leading" secondItem="Ber-st-vmh" secondAttribute="leading" id="G4J-1X-jPO"/>
+                            <constraint firstAttribute="trailing" secondItem="L8J-74-4My" secondAttribute="trailing" id="Y79-k0-Zg7"/>
+                            <constraint firstAttribute="bottom" secondItem="L8J-74-4My" secondAttribute="bottom" id="lQQ-Du-Q0s"/>
+                            <constraint firstItem="L8J-74-4My" firstAttribute="top" secondItem="Z9W-nY-ahS" secondAttribute="bottom" id="vfe-Hn-MR1"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="L8J-74-4My" id="sFi-gD-g9d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uXg-3X-PHW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

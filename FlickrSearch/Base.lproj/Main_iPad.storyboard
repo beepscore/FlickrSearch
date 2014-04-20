@@ -181,14 +181,25 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JOM-UR-vZo">
+                                <rect key="frame" x="0.0" y="44" width="546" height="576"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="JOM-UR-vZo" secondAttribute="bottom" id="5yK-j3-fBC"/>
+                            <constraint firstAttribute="trailing" secondItem="JOM-UR-vZo" secondAttribute="trailing" constant="-6" id="9aI-GK-mCB"/>
+                            <constraint firstItem="JOM-UR-vZo" firstAttribute="leading" secondItem="dfp-DV-gpk" secondAttribute="leading" id="HEw-8B-Ml2"/>
                             <constraint firstAttribute="trailing" secondItem="bfL-VX-6UR" secondAttribute="trailing" id="XUr-cD-4EU"/>
                             <constraint firstItem="bfL-VX-6UR" firstAttribute="top" secondItem="YHs-Db-1NY" secondAttribute="bottom" id="Y1U-I3-fa0"/>
                             <constraint firstItem="bfL-VX-6UR" firstAttribute="leading" secondItem="dfp-DV-gpk" secondAttribute="leading" id="gTq-GT-7Gt"/>
+                            <constraint firstItem="JOM-UR-vZo" firstAttribute="top" secondItem="bfL-VX-6UR" secondAttribute="bottom" id="s84-fg-X5F"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="JOM-UR-vZo" id="dWP-SH-Oss"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r6b-lt-pGy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
