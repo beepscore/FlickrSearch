@@ -11,11 +11,15 @@
 
 @implementation FlickrPhotoCell
 
-- (id)initWithFrame:(CGRect)frame
+-(id)initWithCoder:(NSCoder *)aDecoder
 {
-    self = [super initWithFrame:frame];
+    self = [super initWithCoder:aDecoder];
     if (self) {
-        // Initialization code
+        UIView *bgView = [[UIView alloc] initWithFrame:self.backgroundView.frame];
+        bgView.backgroundColor = [UIColor blueColor];
+        bgView.layer.borderColor = [[UIColor whiteColor] CGColor];
+        bgView.layer.borderWidth = 4;
+        self.selectedBackgroundView = bgView;
     }
     return self;
 }
