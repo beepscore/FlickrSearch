@@ -28,7 +28,6 @@
                                  UIEdgeInsetsMake(68, 68, 68, 68)];
     
     self.backgroundImageView.image = shareButtonImage;
-    self.backgroundImageView.center = self.center;
 }
 
 @end
