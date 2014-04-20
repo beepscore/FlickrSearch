@@ -11,6 +11,7 @@
 #import "FlickrPhotoCell.h"
 #import "FlickrPhotoHeaderView.h"
 #import "FlickrPhotoHeaderViewPrivate.h"
+#import "FlickrPhotoViewController.h"
 
 @interface ViewController ()
 @end
@@ -133,7 +134,16 @@
 - (void)collectionView:(UICollectionView *)collectionView
 didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    // TODO: Select Item
+    if (!self.sharing) {
+        NSString *searchTerm = self.searches[indexPath.section];
+        FlickrPhoto *photo = self.searchResults[searchTerm][indexPath.row];
+        [self performSegueWithIdentifier:@"ShowFlickrPhoto"
+                                  sender:photo];
+        [self.collectionView
+         deselectItemAtIndexPath:indexPath animated:YES];
+    } else {
+        // Todo: Multi-Selection
+    }
 }
 
 // only called if UICollection view allows multiple selection
@@ -166,6 +176,14 @@ didDeselectItemAtIndexPath:(NSIndexPath *)indexPath
         insetForSectionAtIndex:(NSInteger)section
 {
     return UIEdgeInsetsMake(50, 20, 50, 20);
+}
+
+#pragma mark - Segue
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"ShowFlickrPhoto"]) {
+        FlickrPhotoViewController *flickrPhotoViewController = segue.destinationViewController;
+        flickrPhotoViewController.flickrPhoto = sender;
+    }
 }
 
 @end

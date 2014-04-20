@@ -24,6 +24,8 @@ UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 @property(nonatomic, strong) NSMutableArray *searches;
 @property(nonatomic, strong) Flickr *flickr;
 
+@property (nonatomic) BOOL sharing;
+
 - (IBAction)shareButtonTapped:(id)sender;
 
 @end
