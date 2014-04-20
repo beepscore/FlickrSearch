@@ -149,10 +149,29 @@
                         <outlet property="shareButton" destination="WMt-2u-6kw" id="TS8-cd-dgp"/>
                         <outlet property="textField" destination="Qvw-Sy-he5" id="Uhm-6T-L7S"/>
                         <outlet property="toolbar" destination="5cC-27-4jf" id="LzN-TZ-rT2"/>
+                        <segue destination="ymY-O4-6hc" kind="modal" identifier="ShowFlickrPhoto" id="oWN-s8-VZ0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Flickr Photo View Controller-->
+        <scene sceneID="Prk-cb-9aM">
+            <objects>
+                <viewController id="ymY-O4-6hc" customClass="FlickrPhotoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5xs-OR-Dm4"/>
+                        <viewControllerLayoutGuide type="bottom" id="glX-ua-kds"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ber-st-vmh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uXg-3X-PHW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="778" y="-102"/>
         </scene>
     </scenes>
     <resources>
