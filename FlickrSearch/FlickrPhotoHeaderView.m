@@ -20,13 +20,15 @@
     return self;
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
+- (void)setSearchText:(NSString *)text
 {
-    // Drawing code
+    self.searchLabel.text = text;
+    UIImage *shareButtonImage = [[UIImage imageNamed:@"header_bg.png"]
+                                 resizableImageWithCapInsets:
+                                 UIEdgeInsetsMake(68, 68, 68, 68)];
+    
+    self.backgroundImageView.image = shareButtonImage;
+    self.backgroundImageView.center = self.center;
 }
-*/
 
 @end

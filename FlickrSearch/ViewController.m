@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "ViewControllerPrivate.h"
 #import "FlickrPhotoCell.h"
+#import "FlickrPhotoHeaderView.h"
+#import "FlickrPhotoHeaderViewPrivate.h"
 
 @interface ViewController ()
 @end
@@ -111,15 +113,21 @@
     return cell;
 }
 
-/*
- // returns header or footer for each section
+// returns header or footer for each section
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView
            viewForSupplementaryElementOfKind:(NSString *)kind
                                  atIndexPath:(NSIndexPath *)indexPath
- {
- return [[UICollectionReusableView alloc] init];
- }
- */
+{
+    FlickrPhotoHeaderView *headerView = [collectionView
+                                         dequeueReusableSupplementaryViewOfKind:
+                                         UICollectionElementKindSectionHeader
+                                         withReuseIdentifier:@"FlickrPhotoHeaderView"
+                                         forIndexPath:indexPath];
+    
+    NSString *searchTerm = self.searches[indexPath.section];
+    [headerView setSearchText:searchTerm];
+    return headerView;
+}
 
 #pragma mark - UICollectionViewDelegate
 - (void)collectionView:(UICollectionView *)collectionView

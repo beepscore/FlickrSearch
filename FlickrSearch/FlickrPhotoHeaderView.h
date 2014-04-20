@@ -10,4 +10,6 @@
 
 @interface FlickrPhotoHeaderView : UICollectionReusableView
 
+- (void)setSearchText:(NSString *)text;
+
 @end
