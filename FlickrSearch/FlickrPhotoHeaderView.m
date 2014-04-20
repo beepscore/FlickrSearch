@@ -7,6 +7,7 @@
 //
 
 #import "FlickrPhotoHeaderView.h"
+#import "FlickrPhotoHeaderViewPrivate.h"
 
 @implementation FlickrPhotoHeaderView
 
