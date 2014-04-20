@@ -32,6 +32,26 @@
     // Do any additional setup after loading the view.
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+
+    if(self.flickrPhoto.largeImage) {
+        self.imageView.image = self.flickrPhoto.largeImage;
+    } else {
+        // if no largeImage, show stretched thumbnail
+        self.imageView.image = self.flickrPhoto.thumbnail;
+        
+        [Flickr loadImageForPhoto:self.flickrPhoto
+                        thumbnail:NO
+                  completionBlock:^(UIImage *photoImage, NSError *error) {
+                      if(!error) {
+                          dispatch_async(dispatch_get_main_queue(), ^{
+                              self.imageView.image = self.flickrPhoto.largeImage;
+                          });
+                      }
+                  }];
+    }
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
