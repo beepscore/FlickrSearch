@@ -50,13 +50,13 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="na6-zg-gXh">
                                     <size key="itemSize" width="200" height="200"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="headerReferenceSize" width="50" height="90"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FlickrCell" id="JGO-8N-rzl" customClass="FlickrPhotoCell">
-                                        <rect key="frame" x="60" y="0.0" width="200" height="200"/>
+                                        <rect key="frame" x="60" y="90" width="200" height="200"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
@@ -86,6 +86,33 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FlickrPhotoHeaderView" id="gRn-dq-mrS" customClass="FlickrPhotoHeaderView">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fZB-dy-OCx">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65O-86-iGu">
+                                            <rect key="frame" x="0.0" y="34" width="320" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                            <color key="textColor" red="0.20000000000000001" green="0.40000000000000002" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="centerX" secondItem="fZB-dy-OCx" secondAttribute="centerX" id="044-d7-OsE"/>
+                                        <constraint firstItem="fZB-dy-OCx" firstAttribute="top" secondItem="gRn-dq-mrS" secondAttribute="top" id="f7Z-Aq-7h8"/>
+                                        <constraint firstAttribute="centerY" secondItem="fZB-dy-OCx" secondAttribute="centerY" id="xCd-I2-GXn"/>
+                                        <constraint firstItem="fZB-dy-OCx" firstAttribute="leading" secondItem="gRn-dq-mrS" secondAttribute="leading" id="zAz-uv-3mI"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="backgroundImageView" destination="fZB-dy-OCx" id="aDm-ON-G9H"/>
+                                        <outlet property="searchLabel" destination="65O-86-iGu" id="n0o-iX-MxK"/>
+                                    </connections>
+                                </collectionReusableView>
                                 <connections>
                                     <outlet property="dataSource" destination="vXZ-lx-hvc" id="Jod-4k-pgR"/>
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="W1p-hm-DbB"/>
