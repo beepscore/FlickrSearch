@@ -23,6 +23,8 @@
 		DE4253D21900C50F00B8B746 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4253AE1900C50F00B8B746 /* Foundation.framework */; };
 		DE4253D31900C50F00B8B746 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4253B21900C50F00B8B746 /* UIKit.framework */; };
 		DE4253DB1900C50F00B8B746 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE4253D91900C50F00B8B746 /* InfoPlist.strings */; };
+		DE96BE5B190355D8005B6E29 /* FlickrPhotoHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE96BE5A190355D8005B6E29 /* FlickrPhotoHeaderView.m */; };
+		DE96BE5C190355D8005B6E29 /* FlickrPhotoHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE96BE5A190355D8005B6E29 /* FlickrPhotoHeaderView.m */; };
 		DEB375221901A92300E4A298 /* BSStoryboardViewControllerLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB375211901A92300E4A298 /* BSStoryboardViewControllerLoader.m */; };
 		DEB556A71901A4C000F848E3 /* StoryboardViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB556A61901A4C000F848E3 /* StoryboardViewControllerTests.m */; };
 		DEEB50BB1900EB400020EE87 /* Flickr.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEB50B81900EB400020EE87 /* Flickr.m */; };
@@ -65,6 +67,8 @@
 		DE4253D01900C50F00B8B746 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		DE4253D81900C50F00B8B746 /* FlickrSearchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlickrSearchTests-Info.plist"; sourceTree = "<group>"; };
 		DE4253DA1900C50F00B8B746 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DE96BE59190355D8005B6E29 /* FlickrPhotoHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhotoHeaderView.h; sourceTree = "<group>"; };
+		DE96BE5A190355D8005B6E29 /* FlickrPhotoHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhotoHeaderView.m; sourceTree = "<group>"; };
 		DEB375201901A92300E4A298 /* BSStoryboardViewControllerLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSStoryboardViewControllerLoader.h; sourceTree = "<group>"; };
 		DEB375211901A92300E4A298 /* BSStoryboardViewControllerLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSStoryboardViewControllerLoader.m; sourceTree = "<group>"; };
 		DEB375231901ADD100E4A298 /* ViewControllerPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerPrivate.h; sourceTree = "<group>"; };
@@ -142,6 +146,8 @@
 				DEEB50BA1900EB400020EE87 /* FlickrPhoto.m */,
 				DE16798B1901DC2E000A41B5 /* FlickrPhotoCell.h */,
 				DE16798C1901DC2E000A41B5 /* FlickrPhotoCell.m */,
+				DE96BE59190355D8005B6E29 /* FlickrPhotoHeaderView.h */,
+				DE96BE5A190355D8005B6E29 /* FlickrPhotoHeaderView.m */,
 				DE4253C61900C50F00B8B746 /* ViewController.h */,
 				DEB375231901ADD100E4A298 /* ViewControllerPrivate.h */,
 				DE4253C71900C50F00B8B746 /* ViewController.m */,
@@ -280,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE96BE5B190355D8005B6E29 /* FlickrPhotoHeaderView.m in Sources */,
 				DE4253C81900C50F00B8B746 /* ViewController.m in Sources */,
 				DE16798D1901DC2E000A41B5 /* FlickrPhotoCell.m in Sources */,
 				DE4253BF1900C50F00B8B746 /* AppDelegate.m in Sources */,
@@ -296,6 +303,7 @@
 				DE16798E1901DC2E000A41B5 /* FlickrPhotoCell.m in Sources */,
 				DEED2C451901B78400C6264C /* ViewController.m in Sources */,
 				DEB375221901A92300E4A298 /* BSStoryboardViewControllerLoader.m in Sources */,
+				DE96BE5C190355D8005B6E29 /* FlickrPhotoHeaderView.m in Sources */,
 				DEED2C461901B7BB00C6264C /* AppDelegate.m in Sources */,
 				DEEB50BE1900EB400020EE87 /* FlickrPhoto.m in Sources */,
 				DEB556A71901A4C000F848E3 /* StoryboardViewControllerTests.m in Sources */,
