@@ -27,6 +27,8 @@
 		DE96BE5C190355D8005B6E29 /* FlickrPhotoHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE96BE5A190355D8005B6E29 /* FlickrPhotoHeaderView.m */; };
 		DEB375221901A92300E4A298 /* BSStoryboardViewControllerLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB375211901A92300E4A298 /* BSStoryboardViewControllerLoader.m */; };
 		DEB556A71901A4C000F848E3 /* StoryboardViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB556A61901A4C000F848E3 /* StoryboardViewControllerTests.m */; };
+		DEDCEBA819037BD4004BA2C1 /* FlickrPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDCEBA719037BD4004BA2C1 /* FlickrPhotoViewController.m */; };
+		DEDCEBA919037BD4004BA2C1 /* FlickrPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEDCEBA719037BD4004BA2C1 /* FlickrPhotoViewController.m */; };
 		DEEB50BB1900EB400020EE87 /* Flickr.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEB50B81900EB400020EE87 /* Flickr.m */; };
 		DEEB50BC1900EB400020EE87 /* Flickr.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEB50B81900EB400020EE87 /* Flickr.m */; };
 		DEEB50BD1900EB400020EE87 /* FlickrPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEB50BA1900EB400020EE87 /* FlickrPhoto.m */; };
@@ -74,6 +76,8 @@
 		DEB375211901A92300E4A298 /* BSStoryboardViewControllerLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSStoryboardViewControllerLoader.m; sourceTree = "<group>"; };
 		DEB375231901ADD100E4A298 /* ViewControllerPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerPrivate.h; sourceTree = "<group>"; };
 		DEB556A61901A4C000F848E3 /* StoryboardViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryboardViewControllerTests.m; sourceTree = "<group>"; };
+		DEDCEBA619037BD4004BA2C1 /* FlickrPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhotoViewController.h; sourceTree = "<group>"; };
+		DEDCEBA719037BD4004BA2C1 /* FlickrPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhotoViewController.m; sourceTree = "<group>"; };
 		DEEB50B71900EB400020EE87 /* Flickr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flickr.h; sourceTree = "<group>"; };
 		DEEB50B81900EB400020EE87 /* Flickr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Flickr.m; sourceTree = "<group>"; };
 		DEEB50B91900EB400020EE87 /* FlickrPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhoto.h; sourceTree = "<group>"; };
@@ -150,6 +154,8 @@
 				DE96BE59190355D8005B6E29 /* FlickrPhotoHeaderView.h */,
 				DE96BE5D19035729005B6E29 /* FlickrPhotoHeaderViewPrivate.h */,
 				DE96BE5A190355D8005B6E29 /* FlickrPhotoHeaderView.m */,
+				DEDCEBA619037BD4004BA2C1 /* FlickrPhotoViewController.h */,
+				DEDCEBA719037BD4004BA2C1 /* FlickrPhotoViewController.m */,
 				DE4253C61900C50F00B8B746 /* ViewController.h */,
 				DEB375231901ADD100E4A298 /* ViewControllerPrivate.h */,
 				DE4253C71900C50F00B8B746 /* ViewController.m */,
@@ -290,6 +296,7 @@
 			files = (
 				DE96BE5B190355D8005B6E29 /* FlickrPhotoHeaderView.m in Sources */,
 				DE4253C81900C50F00B8B746 /* ViewController.m in Sources */,
+				DEDCEBA819037BD4004BA2C1 /* FlickrPhotoViewController.m in Sources */,
 				DE16798D1901DC2E000A41B5 /* FlickrPhotoCell.m in Sources */,
 				DE4253BF1900C50F00B8B746 /* AppDelegate.m in Sources */,
 				DEEB50BB1900EB400020EE87 /* Flickr.m in Sources */,
@@ -302,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEDCEBA919037BD4004BA2C1 /* FlickrPhotoViewController.m in Sources */,
 				DE16798E1901DC2E000A41B5 /* FlickrPhotoCell.m in Sources */,
 				DEED2C451901B78400C6264C /* ViewController.m in Sources */,
 				DEB375221901A92300E4A298 /* BSStoryboardViewControllerLoader.m in Sources */,
