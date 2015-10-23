@@ -27,4 +27,8 @@ typedef void (^FlickrPhotoCompletionBlock)(UIImage *photoImage, NSError *error);
 - (void)searchFlickrForTerm:(NSString *)term
             completionBlock:(FlickrSearchCompletionBlock)completionBlock;
 
+///////////////////////////////////////////////////////////////////////////////
+// "private" api. exposed for use by unit tests
++ (NSString *)flickrSearchURLForSearchTerm:(NSString *)searchTerm;
+
 @end

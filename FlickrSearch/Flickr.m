@@ -10,19 +10,21 @@
 #import "FlickrPhoto.h"
 
 // get temporary key from
-// http://www.flickr.com/services/api/explore/?method=flickr.photos.search
+// https://www.flickr.com/services/api/explore/?method=flickr.photos.search
 // on that page, do a search to get url at bottom of page. Then copy &apiKey up to &
 // Alternatively, register with Flickr for a developer key
-// http://www.flickr.com/services/api/keys/apply/
+// https://www.flickr.com/services/api/keys/apply/
 // redirects to Yahoo login
-#define kFlickrAPIKey @"48bd829d80430d48347c41495afb97af"
+#define kFlickrAPIKey @"51b82b9d2024fb99592b7989b734c340"
+#define kFlickrAPISig @"ce3140ced04a9ef7ce9c5c2975553b0a"
+
 
 @implementation Flickr
 
 + (NSString *)flickrSearchURLForSearchTerm:(NSString *)searchTerm
 {
     searchTerm = [searchTerm stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    return [NSString stringWithFormat:@"http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=%@&text=%@&per_page=20&format=json&nojsoncallback=1", kFlickrAPIKey, searchTerm];
+    return [NSString stringWithFormat:@"https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=%@&text=%@&per_page=20&format=json&nojsoncallback=1&api_sig=%@", kFlickrAPIKey, searchTerm, kFlickrAPISig];
 }
 
 + (NSString *)flickrPhotoURLForFlickrPhoto:(FlickrPhoto *)flickrPhoto
@@ -32,7 +34,7 @@
     {
         size = @"m";
     }
-    return [NSString stringWithFormat:@"http://farm%ld.staticflickr.com/%ld/%lld_%@_%@.jpg",
+    return [NSString stringWithFormat:@"https://farm%ld.staticflickr.com/%ld/%lld_%@_%@.jpg",
             (long)flickrPhoto.farm, (long)flickrPhoto.server,
             flickrPhoto.photoID, flickrPhoto.secret, size];
 }

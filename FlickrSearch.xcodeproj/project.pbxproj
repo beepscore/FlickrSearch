@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DE16798D1901DC2E000A41B5 /* FlickrPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE16798C1901DC2E000A41B5 /* FlickrPhotoCell.m */; };
 		DE16798E1901DC2E000A41B5 /* FlickrPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE16798C1901DC2E000A41B5 /* FlickrPhotoCell.m */; };
+		DE2595921BDA015D00125B70 /* FlikrTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE2595911BDA015D00125B70 /* FlikrTests.m */; };
 		DE4253AF1900C50F00B8B746 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4253AE1900C50F00B8B746 /* Foundation.framework */; };
 		DE4253B11900C50F00B8B746 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4253B01900C50F00B8B746 /* CoreGraphics.framework */; };
 		DE4253B31900C50F00B8B746 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE4253B21900C50F00B8B746 /* UIKit.framework */; };
@@ -50,6 +51,7 @@
 /* Begin PBXFileReference section */
 		DE16798B1901DC2E000A41B5 /* FlickrPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhotoCell.h; sourceTree = "<group>"; };
 		DE16798C1901DC2E000A41B5 /* FlickrPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhotoCell.m; sourceTree = "<group>"; };
+		DE2595911BDA015D00125B70 /* FlikrTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlikrTests.m; sourceTree = "<group>"; };
 		DE4253AB1900C50F00B8B746 /* FlickrSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickrSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE4253AE1900C50F00B8B746 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DE4253B01900C50F00B8B746 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -184,6 +186,7 @@
 				DE4253D71900C50F00B8B746 /* Supporting Files */,
 				DEB375201901A92300E4A298 /* BSStoryboardViewControllerLoader.h */,
 				DEB375211901A92300E4A298 /* BSStoryboardViewControllerLoader.m */,
+				DE2595911BDA015D00125B70 /* FlikrTests.m */,
 				DEB556A61901A4C000F848E3 /* StoryboardViewControllerTests.m */,
 			);
 			path = FlickrSearchTests;
@@ -317,6 +320,7 @@
 				DEB375221901A92300E4A298 /* BSStoryboardViewControllerLoader.m in Sources */,
 				DE96BE5C190355D8005B6E29 /* FlickrPhotoHeaderView.m in Sources */,
 				DEED2C461901B7BB00C6264C /* AppDelegate.m in Sources */,
+				DE2595921BDA015D00125B70 /* FlikrTests.m in Sources */,
 				DEEB50BE1900EB400020EE87 /* FlickrPhoto.m in Sources */,
 				DEB556A71901A4C000F848E3 /* StoryboardViewControllerTests.m in Sources */,
 				DEEB50BC1900EB400020EE87 /* Flickr.m in Sources */,
