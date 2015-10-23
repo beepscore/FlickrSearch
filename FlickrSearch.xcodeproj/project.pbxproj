@@ -52,6 +52,7 @@
 		DE16798B1901DC2E000A41B5 /* FlickrPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrPhotoCell.h; sourceTree = "<group>"; };
 		DE16798C1901DC2E000A41B5 /* FlickrPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrPhotoCell.m; sourceTree = "<group>"; };
 		DE2595911BDA015D00125B70 /* FlikrTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlikrTests.m; sourceTree = "<group>"; };
+		DE2595931BDA11E400125B70 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DE4253AB1900C50F00B8B746 /* FlickrSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickrSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE4253AE1900C50F00B8B746 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DE4253B01900C50F00B8B746 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -114,6 +115,7 @@
 		DE4253A21900C50F00B8B746 = {
 			isa = PBXGroup;
 			children = (
+				DE2595931BDA11E400125B70 /* README.md */,
 				DE4253B41900C50F00B8B746 /* FlickrSearch */,
 				DE4253D61900C50F00B8B746 /* FlickrSearchTests */,
 				DE4253AD1900C50F00B8B746 /* Frameworks */,
