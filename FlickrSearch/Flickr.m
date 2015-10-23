@@ -16,7 +16,6 @@
 // https://www.flickr.com/services/api/keys/apply/
 // redirects to Yahoo login
 #define kFlickrAPIKey @"51b82b9d2024fb99592b7989b734c340"
-#define kFlickrAPISig @"ce3140ced04a9ef7ce9c5c2975553b0a"
 
 
 @implementation Flickr
@@ -24,7 +23,7 @@
 + (NSString *)flickrSearchURLForSearchTerm:(NSString *)searchTerm
 {
     searchTerm = [searchTerm stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    return [NSString stringWithFormat:@"https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=%@&text=%@&per_page=20&format=json&nojsoncallback=1&api_sig=%@", kFlickrAPIKey, searchTerm, kFlickrAPISig];
+    return [NSString stringWithFormat:@"https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=%@&text=%@&per_page=20&format=json&nojsoncallback=1", kFlickrAPIKey, searchTerm];
 }
 
 + (NSString *)flickrPhotoURLForFlickrPhoto:(FlickrPhoto *)flickrPhoto
