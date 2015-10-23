@@ -26,7 +26,7 @@
 }
 
 + (NSString *)flickrSearchURLStringForSearchTerm:(NSString *)searchTerm {
-    searchTerm = [searchTerm stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    searchTerm = [searchTerm stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLFragmentAllowedCharacterSet]];
     return [NSString stringWithFormat:@"https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=%@&text=%@&per_page=20&format=json&nojsoncallback=1", kFlickrAPIKey, searchTerm];
 }
 
