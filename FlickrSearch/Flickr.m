@@ -30,7 +30,15 @@
     return [NSString stringWithFormat:@"https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=%@&text=%@&per_page=20&format=json&nojsoncallback=1", kFlickrAPIKey, searchTerm];
 }
 
-+ (NSString *)flickrPhotoURLForFlickrPhoto:(FlickrPhoto *)flickrPhoto
++ (NSURL *)flickrPhotoURLForFlickrPhoto:(FlickrPhoto *)flickrPhoto
+                                   size:(NSString *)size {
+    
+    NSString *urlString = [Flickr flickrPhotoURLStringForFlickrPhoto:flickrPhoto
+                                                                size:size];
+    return [NSURL URLWithString:urlString];
+}
+
++ (NSString *)flickrPhotoURLStringForFlickrPhoto:(FlickrPhoto *)flickrPhoto
                                       size:(NSString *)size {
     if(!size) {
         size = @"m";
@@ -76,8 +84,8 @@
                         photo.secret = objPhoto[@"secret"];
                         photo.photoID = [objPhoto[@"id"] longLongValue];
                         
-                        NSString *searchURL = [Flickr flickrPhotoURLForFlickrPhoto:photo size:@"m"];
-                        NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:searchURL]
+                        NSURL *searchURL = [Flickr flickrPhotoURLForFlickrPhoto:photo size:@"m"];
+                        NSData *imageData = [NSData dataWithContentsOfURL:searchURL
                                                                   options:0
                                                                     error:&error];
                         UIImage *image = [UIImage imageWithData:imageData];
@@ -99,13 +107,13 @@
     
     NSString *size = thumbnail ? @"m" : @"b";
     
-    NSString *searchURL = [Flickr flickrPhotoURLForFlickrPhoto:flickrPhoto size:size];
+    NSURL *searchURL = [Flickr flickrPhotoURLForFlickrPhoto:flickrPhoto size:size];
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     
     dispatch_async(queue, ^{
         NSError *error = nil;
         
-        NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:searchURL]
+        NSData *imageData = [NSData dataWithContentsOfURL:searchURL
                                                   options:0
                                                     error:&error];
         if(error) {

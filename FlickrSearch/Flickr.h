@@ -22,8 +22,8 @@ typedef void (^FlickrPhotoCompletionBlock)(UIImage *photoImage, NSError *error);
                 thumbnail:(BOOL)thumbnail
           completionBlock:(FlickrPhotoCompletionBlock)completionBlock;
 
-+ (NSString *)flickrPhotoURLForFlickrPhoto:(FlickrPhoto *)flickrPhoto
-                                      size:(NSString *)size;
++ (NSURL *)flickrPhotoURLForFlickrPhoto:(FlickrPhoto *)flickrPhoto
+                                   size:(NSString *)size;
 
 - (void)searchFlickrForTerm:(NSString *)term
             completionBlock:(FlickrSearchCompletionBlock)completionBlock;
