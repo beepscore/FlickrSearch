@@ -5,6 +5,7 @@
 //  Created by Brandon Trebitowski on 6/28/12.
 //  Copyright (c) 2012 Brandon Trebitowski. All rights reserved.
 //
+// Modified by Steve Baker Beepscore LLC
 
 #import <Foundation/Foundation.h>
 
@@ -29,6 +30,7 @@ typedef void (^FlickrPhotoCompletionBlock)(UIImage *photoImage, NSError *error);
 
 ///////////////////////////////////////////////////////////////////////////////
 // "private" api. exposed for use by unit tests
-+ (NSString *)flickrSearchURLForSearchTerm:(NSString *)searchTerm;
++ (NSURL *)flickrSearchURLForSearchTerm:(NSString *)searchTerm;
++ (NSString *)flickrSearchURLStringForSearchTerm:(NSString *)searchTerm;
 
 @end
